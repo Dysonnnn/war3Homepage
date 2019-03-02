@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+		js测试
+	</title>
+</head>
+<body>
+<div class = "button" style="width:200px">	按钮1 
+<div class="box">
+	box1
+</div></div>
+<div class = "button" style="width:200px">	按钮2 
+<div class="box">
+	box2
+	
+</div></div>
+<style type="text/css">
+	.button{
+		background: red;
+		transition: all 1s;
+	}
+	.box{
+		background: lightblue;
+		height: 50px;
+	}
+</style>
+<!-- 
+	<script type="text/javascript">
+		// 当。。。。的时候 做。。。。事情		
+		// 当点击的时候弹出helloworld
+
+		document.getElementsByClassName('button')[0].onclick = function(){
+			alert('helloworld')   //浏览器弹出窗口
+			
+			console.log('hello');  //在console内显示hello
+
+			this.style.background = 'blue';  //按下之后变蓝色
+
+			this.style.width= '300px';
+					}
+
+		// this在这里指代的是事件绑定的元素对象
+		
+		//js 可以在 检查网页的时候 console 输入
+
+	</script>
+ -->
+	<script src="js/jquers.js" type="text/javascript" charset="utf-8" >		
+	</script> 
+
+	<script type="text/javascript">
+		$('.button').click(function(){
+			// console.log('hello')
+		$(this).css({'background':'blue','width':'300px'})
+		
+		if ($(this).css('width')='200px')
+		{
+			$(this).css({'background':'blue','width':'300px'}),
+			$(this).find('.box').slideUp()
+
+		}
+		else{
+			$(this).css({'background':'red','width':'200px'}),
+			$(this).find('box').slideDown()
+		}
+		})
+	</script>
+
+
+
+</body>
+</html>

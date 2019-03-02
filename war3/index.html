@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- index 是 默认的网页进入口 -->
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type=" text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="top">
+			<div class="content">
+				<div class="left">
+					<li></li>
+					<li>游戏</li>
+					<li>商城</li>
+					<li>新闻</li>
+					<li>电子竞技</li>
+					<li>暴雪嘉年华</li>
+				</div>
+				<div class="right">
+					<li>支持</li>
+					<li>你的通行证</li>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<nav>
+				<div class="left">
+					<li> <img src="img/icon.png"> </li>
+					<li>特色</li>
+					<li>媒体</li>
+					<li>故事</li>
+					<li>游戏</li>
+					<li>官方对战平台</li>
+				</div>
+				<div class="right">
+					立即预约
+				</div>
+			</nav>
+			<div class="center">
+				<img src="img/center_icon.png">
+				<p>塑造</p>
+				<p>魔兽系列世界的命运</p>
+			</div>
+			<!-- autoplay="autoplay" -->
+			<!-- mute 静音 -->
+			<video width="100%" muted="muted" loop="loop" autoplay="autoplay" ">
+				<source src=" video/background-video.mp4">
+			 </source> <source src="https://blz.nosdn.127.net/1/war3-website/home/7WL1TA0SXSBK1540311039182.webm" type="video/webm"
+			 /source> </video> </div> <br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<br><br><br><br><br>
+				<!-- 	<script src="../js/jquers.js" type="text/javascript" charset="utf-8" >		
+	</script>  -->
+				<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript">
+					console.log('打印log在 console'),
+						//scrollTop() 滚动的位置
+						$(document).scroll(function() {
+							if ($(document).scrollTop() > 300) {
+								$('.banner nav .right').show()
+							} else {
+								$('.banner nav .right').hide()
+							}
+						})
+				</script>
+	</body>
+</html>

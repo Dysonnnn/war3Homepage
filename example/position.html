@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试位置</title>
+</head>
+<body>
+
+
+<div class = "bigbox">
+<div class = "box">
+	
+	box   绝对定位 的位置
+</div>
+
+<div class = "box2">
+	box2  相对定位 位置
+</div>
+<div class = "box3">
+	box3 的 浮动定位位置
+</div>
+	bigBox的位置   lalalla啦啦啦啦
+	<br><br><br>	nanannasnnd<br><br>
+	lallaal<br><br>	nanannasnnd<br><br>
+	<br><br><br>	nanannasnnd<br><br>
+	nanannasnnd<br><br>	nanannasnnd<br><br>
+	<br><br>	nanannasnnd<br><br>
+	<br><br><br><br>	nanannasnnd<br><br>
+	nanannasnnd<br><br>	nanannasnnd<br><br>
+	<br><br><br><br>	nanannasnnd<br><br>
+	nanannasnnd
+	<br>
+</div>
+
+<style type="text/css">
+	.bigbox{
+		background: lightblue;
+		bottom: 0;
+		right: 0;
+
+	}
+	.box{
+		position: absolute;
+		/*绝对定位 
+		脱离文档流不保留原来的位置
+		基于浏览器页面的00点(不确切)
+
+		基于最近定位的父级元素
+		*/
+		/*top:50px;*/   /*距离顶部50px*/
+		left:0;
+		bottom: 0;   /*距离底部*/
+		background: red;
+	}
+	.box2{
+		/*
+		相对定位   也是文档流，但是保留原来的位置
+		基于 原来本应该在的位置
+		*/
+		position: relative;
+		background: blue;
+	}
+	.box3{
+		/*
+		浮动定位  一直停靠在界面某个位置，不随着上下拖动而改变
+		*/
+		position: fixed;
+		background: yellow;
+	}
+</style>
+</body>
+</html>

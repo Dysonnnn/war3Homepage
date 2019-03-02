@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<div class="boxA"> boxA</div>
+			<div class="boxB"> boxB</div>
+			<!-- <div class = "clear"> claer</div> -->
+		</div>
+
+		<style type="text/css">
+			.box {
+				background: lightblue;
+				/* height: 50px; */
+				overflow: hidden;
+				/* 超出隐藏 */
+			}
+
+			.box .boxA,
+			.box .boxB {
+				width: 100px;
+				height: 100px;
+			}
+
+			.box .boxA {
+				background: red;
+				float: left;
+			}
+
+			.box .boxB {
+				background: green;
+				float: right;
+			}
+
+			.clear {
+				/* 清楚浮动 */
+				clear: both;
+			}
+		</style>
+		<!-- 		
+			子元素浮动引起的父级元素高度丢失
+			直接给父元素设置高度 即可
+		 -->
+	</body>
+</html>

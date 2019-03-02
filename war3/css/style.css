@@ -1,0 +1,212 @@
+body{
+	margin:0;
+	/* 外边距留白 */
+}
+
+
+li{
+	list-style: none;
+}
+.top{
+	background:#252525;
+	overflow: hidden;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.6);
+}
+.top .content{
+	/* 设置内容宽度 */
+	/* width:1000px; */
+	margin:0 150px; /* 上下距离0  左右自动长度auto  或者 指定值 */
+	
+	
+}
+.top .left{
+	/* 浮动 */
+	float: left;
+}
+
+.top .right{
+	/* 浮动 */
+	float: right;
+}
+
+.top .content li{
+	float:left;
+	list-style: none;
+	/* 列表项样式前面的小圆点 */
+	line-height: 40px;
+	/* 列表项样式  -- 行高*/
+	margin-right: 30px;  /* 右边的 留白大小 */
+	color: rgba(255,255,255,0.8);
+
+	/*margin-left: 5px;*/
+}
+/*   用下面的代替
+.top .content  li i {
+
+	width:  14px;
+	height: 7px;
+	display: inline-block;
+	 行内元素转为块级元素
+	background: url(../img/1_fsbnet_icon-sprite.png);
+	background-position: -147px -131px;
+	margin-left: 5px;
+} */
+
+.top .content  li:nth-of-type(2):after,
+.top .content  li:nth-of-type(4):after{
+	content: '';
+	width:  14px;
+	height: 7px;
+	display: inline-block;
+	/* 行内元素转为块级元素 */
+	background: url(../img/1_fsbnet_icon-sprite.png);
+	background-position: -147px -131px;
+	margin-left: 5px;
+}
+
+
+.top .content li:last-of-type{
+	margin:0;
+}
+
+.top .content .left li:first-of-type{
+	/* .top .content .left li 的第一个标签 */
+	width:62px;
+	height: 40px;
+	background: url(../img/1_fsbnet_icon-sprite.png) no-repeat;  
+	background-position: -18px -75px;
+	/* 初始图片 */
+	
+}
+
+
+
+/*.top .content .left li:nth-of-type(2){
+	text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	color: white;
+	
+	
+}*/
+
+.top .content .left li:nth-of-type(2):hover,
+.top .content .left li:nth-of-type(3):hover,
+.top .content .left li:nth-of-type(4):hover,
+.top .content .left li:nth-of-type(5):hover,
+.top .content .left li:nth-of-type(6):hover,
+.top .content .right li:nth-of-type(1):hover,
+.top .content .right li:nth-of-type(2):hover
+{
+	text-shadow: 0 0 10px rgba(255,255,255,0.5);
+	color: white;
+	/*设置文字高亮*/
+}
+
+
+.top .content .left li:first-of-type:hover{
+	/* .top .content .left li 的第一个标签 的效果 */
+	background-position: -18px -119px;
+	/* 切换为 鼠标移动到该位置后的图片 */
+}
+
+
+
+.banner nav {
+	overflow: hidden;
+}
+.banner nav .left{
+	float:left;
+}
+
+.banner nav .right{
+	float:right;
+	/*display: none;*/
+	/* 内容 立即预约*/
+	
+
+	background:linear-gradient(rgba(102,204,255,.07) 50%,transparent 50%),linear-gradient(#2e3bb0,#202764);
+	color: orange;
+	padding:10px 20px ;
+	border:2px solid black;
+	border-radius: 5px; /*边框圆角*/
+	box-shadow:rgba(0,0,0,.8) 0 0 0 2px, rgba(11,160,255,.3) 0 0 30px 10px, rgba(188,189,204,.3) 0 0 0 2px inset, rgba(72,171,255,.25) 0 0 20px 10px inset;
+}
+
+.banner nav .left li {
+	float: left;
+	line-height: 48px;
+	/*设置行高-- 使文字 垂直居中*/
+	padding:0 10px;
+	border-right: 2px solid rgba(255,255,255,0.15) ;	
+	/*color: rgba(255,255,255,1);*/
+	color: rgba(255,255,255,0.8);
+	font-size: 14px;
+	transition: all .3s;
+	
+}
+
+.banner nav .left li:hover{		
+	/*color:rgba(255,255,255,0.5);*/
+	color:rgba(255,255,255,1);
+	/*设置  左边的 文字变*/
+}
+
+.banner nav .left li img{
+	vertical-align: middle;
+	/*除去图片底部的空白*/
+}
+
+
+.banner nav .left li:first-of-type,
+.banner nav .left li:last-of-type {
+	border-right: none;
+}
+
+
+.banner {
+	position: relative;;
+	top:0;
+	left: 0;
+}
+
+.banner nav {
+	position: sticky;
+	top: 0;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1));
+	padding: 20px 120px;
+
+}
+
+.banner .center {
+	text-align: center;
+	/*行内元素居中*/
+}
+
+.banner .center p{
+	color: white;
+	text-shadow: 3px 3px 0 black;
+}
+
+.banner .center p:nth-of-type(1) {
+	/*内容 塑造*/
+	color: white;
+	margin-bottom: 0;
+	font-size: 30px;
+
+}
+.banner .center p:nth-of-type(2) {
+	/*内容 魔兽系列世界的命运*/
+	color: white;
+	margin-top: 0;
+	font-size: 48px;
+}
+
+
+.banner video {
+	/*视频*/
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/*设置在第一层*/
+	z-index: -1;
+}
